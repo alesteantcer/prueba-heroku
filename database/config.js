@@ -7,10 +7,7 @@ require("dotenv").config();
 // https://www.programmersought.com/article/82255377188/
 const dbConnection = async () => {
 	try {
-		await mongoose.connect(process.env.DB_MONGO, {
-			useNewUrlParser: true,
-			useUnifiedTopology: true,
-		}); /* en la version 6 ya no va , {
+		await mongoose.connect(process.env.DB_MONGO); /* en la version 6 ya no va , {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 		}*/
