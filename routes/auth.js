@@ -42,4 +42,4 @@ router.post(
 router.get("/renew", validarJWT, revalidarToken);
 
 module.exports = router;
-/// vide 2  de folder  25
+
